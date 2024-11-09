@@ -1,21 +1,40 @@
-const db = require("../models/index")
-const usuario = db.Usuario
+const database = require("../models/index.js")
+const usuario = database.Usuario
+const {Op} = require('sequelize')
 
-function CriarUsuario(){
-    usuario.create({
-        nome: 'Anderson',
-        emai: 'andersonjunior@gmail.com',
-        senha: '12345adppjr',
-    }).then(usuarioCriado => console.log("o usuario foi cadastrado",usuarioCriado))
-    .catch(erro => console.log("erro ao cadastrar", erro));
-    
+function criarusuario(){
+const usuarios = [
+   {
+    nome:"Roger",
+    email: "Roger@gmail.com",
+    senha: "12345",
+   },
+   {
+    nome: "Astolfo",
+    email: "Astolfo@gmail.com",
+    senha: "12345",
+   },
+   {
+    nome: "Atreus",
+    email: "Atreus@gmail.com",
+    senha: "123345",
+   },
+]
+usuario.bulkCreate(usuarios).then(enviado => console.log("usuario enviado",enviado))
+    .catch(erro =>{ console.log(erro,"erro ao cadastrar")
+    });
 }
-function deletarUsuario(id){
+
+
+function deletarUser(ids){
     usuario.destroy({
-        where:{
-            id
-        }
+        where: {
+            id:{
+                [Op.in]:ids
+            }
+    }
     })
+    .then(deletado => console.log("usuario deletado", deletado))
+    .catch(erro =>console.log("erro ao deletar", erro))
 }
-
-deletarUsuario(2)
+criarusuario();

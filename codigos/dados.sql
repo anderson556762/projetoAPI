@@ -1,0 +1,22 @@
+INSERT INTO "Usuarios" ("nome", "email", "senha", "createdAt", "updatedAt")
+VALUES
+  ('Shelbi', 'smayhou0@linkedin.com', 'senha123', now(), now()),
+  ('John', 'john.doe@example.com', 'senha123', now(), now()),
+  ('Jane', 'jane.doe@example.com', 'senha123', now(), now()),
+  ('Carlos', 'carlos.silva@example.com', 'senha123', now(), now()),
+  ('Maria', 'maria.silva@example.com', 'senha123', now(), now()),
+  ('Paulo', 'paulo.santos@example.com', 'senha123', now(), now()),
+  ('Ana', 'ana.gomes@example.com', 'senha123', now(), now()),
+  ('Lucas', 'lucas.oliveira@example.com', 'senha123', now(), now()),
+  ('Beatriz', 'beatriz.rodrigues@example.com', 'senha123', now(), now()),
+  ('Eduardo', 'eduardo.martins@example.com', 'senha123', now(), now()),
+  ('Ana', 'ana.moura@example.com', 'senha123', now(), now()),
+  ('Juliana', 'juliana.nascimento@example.com', 'senha123', now(), now()),
+  ('Lucas', 'lucas.soares@example.com', 'senha123', now(), now()),
+  ('Clara', 'clara.souza@example.com', 'senha123', now(), now()),
+  ('Renato', 'renato.silva@example.com', 'senha123', now(), now()),
+  ('Fernanda', 'fernanda.oliveira@example.com', 'senha123', now(), now()),
+  ('Thiago', 'thiago.almeida@example.com', 'senha123', now(), now()),
+  ('Rafael', 'rafael.ferreira@example.com', 'senha123', now(), now()),
+  ('Bruna', 'bruna.gomes@example.com', 'senha123', now(), now()),
+  ('Gustavo', 'gustavo.santos@example.com', 'senha123', now(), now());
