@@ -9,9 +9,9 @@ function criarususer(){
         senha:"minha_senha"
         },
         {
-            nome:"Henrry",
-            email:"henrry@gmail.com",
-            senha:"minha_senha",
+        nome:"Henrry",
+        email:"henrry@gmail.com",
+        senha:"minha_senha",
 
         },
     ]
