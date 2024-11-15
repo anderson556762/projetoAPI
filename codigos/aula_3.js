@@ -1,5 +1,5 @@
-const database = require("../models/index.js")
-const usuario = database.Usuario
+const db = require("../models/index.js")
+const usuario = db.Usuario
 const {Op} = require('sequelize')
 
 function criarusuario(){
