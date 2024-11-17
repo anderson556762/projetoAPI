@@ -1,4 +1,4 @@
-Aqui está um exemplo completo de uma API que utiliza Express, Sequelize e o banco de dados PostgreSQL com suporte a CORS e uma rota POST para criação de registros:
+/*Aqui está um exemplo completo de uma API que utiliza Express, Sequelize e o banco de dados PostgreSQL com suporte a CORS e uma rota POST para criação de registros:
 
 Código:
 
@@ -22,7 +22,7 @@ DB_NAME=sua_base
 
 ---
 
-Arquivo app.js:
+Arquivo app.js:*/
 
 const express = require('express');
 const cors = require('cors');
@@ -100,7 +100,7 @@ app.listen(PORT, () => {
   console.log(`Servidor rodando na porta ${PORT}`);
 });
 
-
+/*
 ---
 
 Funcionamento:
@@ -146,4 +146,4 @@ Resposta de sucesso:
 }
 
 Se precisar de algo mais específico, posso ajustar!
-
+*/
