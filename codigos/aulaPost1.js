@@ -9,7 +9,7 @@ app.use(cors());
 app.use(express.json());
 
 // Rota POST para criar um usuário
-app.post('/users', async (req, res) => {
+app.post('/Users', async (req, res) => {
   const { name, email } = req.body;
 
   try {
